@@ -1,7 +1,7 @@
 {
   "name": "grunt-include-resources",
   "description": "Include your sources into your HTML files automatically.",
-  "version": "0.5",
+  "version": "0.5.0",
   "homepage": "https://github.com/tos1121/grunt-include-source",
   "origAuthor": {
     "name": "Jan Willem van Diermen",
