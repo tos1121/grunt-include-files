@@ -1,7 +1,7 @@
 {
   "name": "grunt-include-files",
   "description": "Include your files into your HTML files automatically.",
-  "version": "0.5.1",
+  "version": "0.5.2",
   "homepage": "https://github.com/tos1121/grunt-include-filess",
   "origAuthor": {
     "name": "Jan Willem van Diermen",

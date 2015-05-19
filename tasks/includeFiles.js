@@ -75,7 +75,7 @@ module.exports = function(grunt) {
 		{
 			'js': '<script src="{filePath}"></script>',
 			'css': '<link href="{filePath}" rel="stylesheet" type="text/css">',
-			'toc': '<a href="{filePath}">{fileName}</a>'
+			'toc': '<a href="{filePath}">{fileName}:{baseName}</a>'
 		},
 		'haml':
 		{
@@ -276,16 +276,19 @@ module.exports = function(grunt) {
 				
 				var	includeFragments = [],
 					pathArray,
-					fileName;
+					fileName,
+					baseName;
 				files.forEach(function(file) {
 					grunt.log.debug('Including file "' + file + '".');
 					pathArray = file.split('/');
 					fileName = pathArray[pathArray.length - 1];
+					baseName = fileName.substr(0,fileName.lastIndexOf('.'));
 
 					includeFragments.push(typeTemplates[include.options.type]
 						.replace(/\{filePath\}/g, url.resolve(include.options.baseUrl || options.baseUrl, file))
 						.replace(/\{filePathDecoded\}/g, decodeURI(url.resolve(include.options.baseUrl || options.baseUrl, file)))
 						.replace(/\{fileName\}/g, fileName)
+						.replace(/\{baseName\}/g, baseName)
 					);
 				});
 
