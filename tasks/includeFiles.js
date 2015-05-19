@@ -175,8 +175,8 @@ module.exports = function(grunt) {
 	};
 	
 	// Register the task.
-	grunt.registerMultiTask('includeSource', 'Include lists of files into your source files automatically.', function() {
-		grunt.log.debug('Starting task "includeSource"...');
+	grunt.registerMultiTask('includeFiles', 'Include lists of files into your source files automatically.', function() {
+		grunt.log.debug('Starting task "includeFiles"...');
 
 		var options = this.options({
 			basePath: '',

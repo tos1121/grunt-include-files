@@ -1,6 +1,6 @@
-# grunt-include-source
+# grunt-include-files
 
-> Include your sources into your HTML files automatically.
+> Include your files into your HTML files automatically.
 
 ## Getting Started
 This plugin requires Grunt `~0.4.4`
@@ -14,17 +14,17 @@ npm install --save-dev grunt-include-source
 Once the plugin has been installed, it may be enabled inside your Gruntfile with this line of JavaScript:
 
 ```js
-grunt.loadNpmTasks('grunt-include-source');
+grunt.loadNpmTasks('grunt-include-files');
 ```
 
-## The "includeSource" task
+## The "includeFiles" task
 
 ### Overview
-In your project's Gruntfile, add a section named `includeSource` to the data object passed into `grunt.initConfig()`.
+In your project's Gruntfile, add a section named `includeFiles` to the data object passed into `grunt.initConfig()`.
 
 ```js
 grunt.initConfig({
-  includeSource: {
+  includeFiles: {
     options: {
       // Task-specific options go here.
     },
@@ -57,7 +57,7 @@ The templates for sources included in `html`, `haml`, `jade`, `scss`, `less` fil
 
 Example:
 ```js
-includeSource: {
+includeFiles: {
   options: {
     basePath: 'app',
     baseUrl: 'public/',
@@ -180,7 +180,7 @@ To set the source file as the destination file use an `/include` comment:
 <!-- /include -->
 ```
   
-When includeSource is run it will keep the include comments and only update the includes inside it.
+When includeFiles is run it will keep the include comments and only update the includes inside it.
 
 This works the same way for Less/Sass, by using `// /include`.
 
@@ -189,7 +189,7 @@ Configure your task like this:
 
 ```js
 grunt.initConfig({
-  includeSource: {
+  includeFiles: {
     options: {
       basePath: 'app',
       baseUrl: 'public/'
@@ -270,7 +270,11 @@ In lieu of a formal styleguide, take care to maintain the existing coding style.
 
 ## Release History
 
-### 2015-05-19 ver. 0.5
+### 2015-05-19 ver. 0.5.1
+
+* changed plugin name to `grunt-include-files`
+
+### 2015-05-19 ver. 0.5.0
 
 * add function to use file name. This function will be useful for especially creating toc pages.
 

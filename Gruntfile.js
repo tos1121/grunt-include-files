@@ -46,7 +46,7 @@ module.exports = function(grunt) {
 
 		// Configuration to be run (and then tested).
 		// For testing, we simply execute some tasks and validate the output.
-		includeSource: {
+		includeFiles: {
 			options: {
 				basePath: '<%= vars.testFilesPath %>',
 				baseUrl: '',
@@ -120,7 +120,7 @@ module.exports = function(grunt) {
 
 	// Whenever the "test" task is run, first clean the "tmp" dir, then run this
 	// plugin's task(s), then test the result.
-	grunt.registerTask('test', ['clean', 'includeSource', 'nodeunit']);
+	grunt.registerTask('test', ['clean', 'includeFiles', 'nodeunit']);
 
 	// By default, lint and run all tests.
 	grunt.registerTask('default', ['jshint', 'test']);
