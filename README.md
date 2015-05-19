@@ -55,6 +55,12 @@ Type: `Object`
 
 The templates for sources included in `html`, `haml`, `jade`, `scss`, `less` files. Definition of single template overrides its default equivalent only.
 
+You can get file infomation using the indicator below:
+
+* {filePath} : Get file path from the path configed by basePath.
+* {fileName} : Get file name.
+* {baseName} : Get baseName(file name without the file extension).
+
 Example:
 ```js
 includeFiles: {
@@ -65,7 +71,7 @@ includeFiles: {
       html: {
         js: '<script src="{filePath}"></script>',
         css: '<link rel="stylesheet" type="text/css" href="{filePath}" />',
-        toc: '<a href="{filePath}">{fileName}</a>'
+        toc: '<a href="{filePath}">{baseName}:{fileName}</a>'
       },
       haml: {
         js: '%script{src: "{filePath}"}/',
