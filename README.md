@@ -65,6 +65,7 @@ includeSource: {
       html: {
         js: '<script src="{filePath}"></script>',
         css: '<link rel="stylesheet" type="text/css" href="{filePath}" />',
+        toc: '<a href="{filePath}">{fileName}</a>'
       },
       haml: {
         js: '%script{src: "{filePath}"}/',
@@ -268,6 +269,10 @@ And the resulting file `index.html` will look something like:
 In lieu of a formal styleguide, take care to maintain the existing coding style. Add unit tests for any new or changed functionality. Lint and test your code using [Grunt](http://gruntjs.com/).
 
 ## Release History
+
+### 2015-05-19 ver. 0.5
+
+* add function to use file name. This function will be useful for especially creating toc pages.
 
 ### 2014-11-22 ver. 0.4.4
 

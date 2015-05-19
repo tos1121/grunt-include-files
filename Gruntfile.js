@@ -33,6 +33,7 @@ module.exports = function(grunt) {
 			hello: 'world',
 			testFilesPath: 'test/files',
 			cssPath: 'css',
+			htmlPath: 'html',
 			lessPath: 'less',
 			scssPath: 'scss',
 			jsPath: 'js',
