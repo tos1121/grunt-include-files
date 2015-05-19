@@ -1,8 +1,8 @@
 /*
- * grunt-include-source
- * https://github.com/jwvdiermen/grunt-include-source
+ * grunt-include-files
+ * https://github.com/jwvdiermen/grunt-include-files
  *
- * Copyright (c) 2013 Jan Willem van Diermen
+ * Copyright (c) 2013 Toshio Ueda
  * Licensed under the MIT license.
  */
 
@@ -99,7 +99,7 @@ module.exports = function(grunt) {
 		nodeunit: {
 			tests: ['test/*_test.js'],
 		},
-		
+
 		lineending: {
 			options: {
 				eol: 'lf',
