@@ -1,8 +1,8 @@
 {
-  "name": "grunt-include-resources",
-  "description": "Include your sources into your HTML files automatically.",
+  "name": "grunt-include-files",
+  "description": "Include your files into your HTML files automatically.",
   "version": "0.5.0",
-  "homepage": "https://github.com/tos1121/grunt-include-resources",
+  "homepage": "https://github.com/tos1121/grunt-include-filess",
   "origAuthor": {
     "name": "Jan Willem van Diermen",
     "email": "jwvdiermen@gmail.com"
@@ -13,15 +13,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/tos1121/grunt-include-resources.git"
+    "url": "git://github.com/tos1121/grunt-include-files.git"
   },
   "bugs": {
-    "url": "https://github.com/tos1121/grunt-include-resources/issues"
+    "url": "https://github.com/tos1121/grunt-include-files/issues"
   },
   "licenses": [
     {
       "type": "MIT",
-      "url": "https://github.com/tos1121/grunt-include-resources/blob/master/LICENSE-MIT"
+      "url": "https://github.com/tos1121/grunt-include-files/blob/master/LICENSE-MIT"
     }
   ],
   "main": "Gruntfile.js",
