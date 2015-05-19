@@ -270,6 +270,10 @@ In lieu of a formal styleguide, take care to maintain the existing coding style.
 
 ## Release History
 
+### 2015-05-19 ver. 0.5.3
+
+* added sass(indent syntax) for including target.
+
 ### 2015-05-19 ver. 0.5.2
 
 * added function to get baseName (filename without extention).
